@@ -18,55 +18,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtL-6A-TWI">
-                                <rect key="frame" x="27" y="612" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Chx-1Y-goD"/>
-                                    <constraint firstAttribute="height" constant="50" id="g9m-j2-ndu"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="進む"/>
-                                <connections>
-                                    <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5BE-pQ-Bz8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mud-EE-EPq">
-                                <rect key="frame" x="157" y="612" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="6Er-RB-4J5"/>
-                                    <constraint firstAttribute="height" constant="50" id="h7I-wj-b3I"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="戻る"/>
-                                <connections>
-                                    <action selector="backImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uix-2i-Bv0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfE-QA-QkP">
-                                <rect key="frame" x="287" y="612" width="100" height="50"/>
-                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="3Y5-d8-X9u"/>
-                                    <constraint firstAttribute="width" constant="100" id="C0d-Vk-UgK"/>
-                                </constraints>
-                                <state key="normal" title="再生/停止"/>
-                                <connections>
-                                    <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSR-Od-gdb"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="atR-un-Pom">
-                                <rect key="frame" x="87" y="217" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FAt-Yv-ZfX">
+                                <rect key="frame" x="72" y="428" width="270" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtL-6A-TWI">
+                                        <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fiA-QU-aex"/>
+                                            <constraint firstAttribute="width" constant="70" id="vHZ-XF-zEX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="進む"/>
+                                        <connections>
+                                            <action selector="nextImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5BE-pQ-Bz8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mud-EE-EPq">
+                                        <rect key="frame" x="100" y="0.0" width="70" height="40"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="gw6-0o-IQ4"/>
+                                            <constraint firstAttribute="width" constant="70" id="x5G-aw-Sp0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="戻る"/>
+                                        <connections>
+                                            <action selector="backImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uix-2i-Bv0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfE-QA-QkP">
+                                        <rect key="frame" x="200" y="0.0" width="70" height="40"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="1K1-o8-zfc"/>
+                                            <constraint firstAttribute="height" constant="40" id="OxS-NV-naR"/>
+                                        </constraints>
+                                        <state key="normal" title="再生/停止"/>
+                                        <connections>
+                                            <action selector="startStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mSR-Od-gdb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="atR-un-Pom">
+                                <rect key="frame" x="87" y="214" width="240" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-S0-ERk">
-                                <rect key="frame" x="126" y="217" width="162" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="162" id="fyP-wA-ahc"/>
-                                    <constraint firstAttribute="height" constant="128" id="k5I-AS-PzZ"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-S0-ERk">
+                                <rect key="frame" x="126" y="202" width="162" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="Q7Y-ES-bo8" kind="show" id="gtO-ww-hNm"/>
                                 </connections>
@@ -74,17 +76,8 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Hxa-S0-ERk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="173" id="1CT-Mc-NXP"/>
-                            <constraint firstItem="Mud-EE-EPq" firstAttribute="leading" secondItem="YtL-6A-TWI" secondAttribute="trailing" constant="30" id="1Ct-4Q-UMs"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hxa-S0-ERk" secondAttribute="trailing" constant="126" id="1FS-Ak-Gcy"/>
-                            <constraint firstItem="Mud-EE-EPq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5kA-bz-9Na"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mud-EE-EPq" secondAttribute="bottom" constant="200" id="E3u-Q7-doC"/>
-                            <constraint firstItem="cfE-QA-QkP" firstAttribute="leading" secondItem="Mud-EE-EPq" secondAttribute="trailing" constant="30" id="FZ9-Ga-Rtp"/>
-                            <constraint firstItem="Mud-EE-EPq" firstAttribute="bottom" secondItem="YtL-6A-TWI" secondAttribute="bottom" id="ZU3-jF-NCq"/>
-                            <constraint firstItem="cfE-QA-QkP" firstAttribute="bottom" secondItem="YtL-6A-TWI" secondAttribute="bottom" id="i7x-48-PFf"/>
-                            <constraint firstItem="Mud-EE-EPq" firstAttribute="leading" secondItem="YtL-6A-TWI" secondAttribute="trailing" constant="30" id="j9b-iL-8NS"/>
-                            <constraint firstItem="Hxa-S0-ERk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="126" id="vQf-W5-CSD"/>
-                            <constraint firstItem="cfE-QA-QkP" firstAttribute="leading" secondItem="Mud-EE-EPq" secondAttribute="trailing" constant="30" id="x77-6h-Nvp"/>
+                            <constraint firstItem="FAt-Yv-ZfX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4nH-bN-OIp"/>
+                            <constraint firstItem="FAt-Yv-ZfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pze-8V-PzQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -92,6 +85,7 @@
                         <outlet property="ImageView" destination="atR-un-Pom" id="pxu-ON-ujC"/>
                         <outlet property="backImage" destination="Mud-EE-EPq" id="2dT-hr-yFC"/>
                         <outlet property="nextImage" destination="YtL-6A-TWI" id="8XB-Vl-e2q"/>
+                        <outlet property="saiseiButton" destination="cfE-QA-QkP" id="MSe-3h-tDI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -106,25 +100,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGm-JI-4d5">
-                                <rect key="frame" x="180" y="672" width="54" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-5Q-2HK">
+                                <rect key="frame" x="20" y="120" width="374" height="430"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGm-JI-4d5">
+                                <rect key="frame" x="155" y="676" width="105" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="QP0-EZ-4W6"/>
+                                    <segue destination="Rmi-xo-gNM" kind="unwind" unwindAction="unwind:" id="wXw-mk-f4n"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-5Q-2HK">
-                                <rect key="frame" x="20" y="120" width="374" height="430"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="FGm-JI-4d5" firstAttribute="leading" secondItem="BLQ-u0-DbA" secondAttribute="leading" constant="180" id="cbn-xv-uLP"/>
-                            <constraint firstItem="BLQ-u0-DbA" firstAttribute="trailing" secondItem="FGm-JI-4d5" secondAttribute="trailing" constant="180" id="eOA-F3-OIW"/>
-                            <constraint firstItem="BLQ-u0-DbA" firstAttribute="bottom" secondItem="FGm-JI-4d5" secondAttribute="bottom" constant="160" id="qAk-4F-UHe"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BLQ-u0-DbA"/>
                     </view>
                     <connections>
@@ -132,11 +122,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pe-5H-Alq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Rmi-xo-gNM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="669.56521739130437" y="137.94642857142856"/>
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="575" height="575"/>
+        <image name="eto_mark01_nezumi.png" width="575" height="575"/>
     </resources>
 </document>

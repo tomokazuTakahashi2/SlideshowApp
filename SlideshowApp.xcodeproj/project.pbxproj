@@ -13,6 +13,18 @@
 		646F0F8E22FB259B006BA068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646F0F8C22FB259B006BA068 /* Main.storyboard */; };
 		646F0F9022FB259C006BA068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646F0F8F22FB259C006BA068 /* Assets.xcassets */; };
 		646F0F9322FB259C006BA068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646F0F9122FB259C006BA068 /* LaunchScreen.storyboard */; };
+		64788FEF230464FE0072DD64 /* eto_mark03_tora.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FE3230464FD0072DD64 /* eto_mark03_tora.png */; };
+		64788FF0230464FE0072DD64 /* eto_mark01_nezumi.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FE4230464FE0072DD64 /* eto_mark01_nezumi.png */; };
+		64788FF1230464FE0072DD64 /* eto_mark10_tori.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FE5230464FE0072DD64 /* eto_mark10_tori.png */; };
+		64788FF2230464FE0072DD64 /* eto_mark02_ushi.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FE6230464FE0072DD64 /* eto_mark02_ushi.png */; };
+		64788FF3230464FE0072DD64 /* eto_mark06_hebi.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FE7230464FE0072DD64 /* eto_mark06_hebi.png */; };
+		64788FF4230464FE0072DD64 /* eto_mark08_hitsuji.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FE8230464FE0072DD64 /* eto_mark08_hitsuji.png */; };
+		64788FF5230464FE0072DD64 /* eto_mark07_uma.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FE9230464FE0072DD64 /* eto_mark07_uma.png */; };
+		64788FF6230464FE0072DD64 /* eto_mark11_inu.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FEA230464FE0072DD64 /* eto_mark11_inu.png */; };
+		64788FF7230464FE0072DD64 /* eto_mark12_inoshishi.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FEB230464FE0072DD64 /* eto_mark12_inoshishi.png */; };
+		64788FF8230464FE0072DD64 /* eto_mark05_tatsu.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FEC230464FE0072DD64 /* eto_mark05_tatsu.png */; };
+		64788FF9230464FE0072DD64 /* eto_mark09_saru.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FED230464FE0072DD64 /* eto_mark09_saru.png */; };
+		64788FFA230464FE0072DD64 /* eto_mark04_usagi.png in Resources */ = {isa = PBXBuildFile; fileRef = 64788FEE230464FE0072DD64 /* eto_mark04_usagi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +36,18 @@
 		646F0F8F22FB259C006BA068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		646F0F9222FB259C006BA068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646F0F9422FB259C006BA068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64788FE3230464FD0072DD64 /* eto_mark03_tora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark03_tora.png; sourceTree = "<group>"; };
+		64788FE4230464FE0072DD64 /* eto_mark01_nezumi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark01_nezumi.png; sourceTree = "<group>"; };
+		64788FE5230464FE0072DD64 /* eto_mark10_tori.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark10_tori.png; sourceTree = "<group>"; };
+		64788FE6230464FE0072DD64 /* eto_mark02_ushi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark02_ushi.png; sourceTree = "<group>"; };
+		64788FE7230464FE0072DD64 /* eto_mark06_hebi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark06_hebi.png; sourceTree = "<group>"; };
+		64788FE8230464FE0072DD64 /* eto_mark08_hitsuji.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark08_hitsuji.png; sourceTree = "<group>"; };
+		64788FE9230464FE0072DD64 /* eto_mark07_uma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark07_uma.png; sourceTree = "<group>"; };
+		64788FEA230464FE0072DD64 /* eto_mark11_inu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark11_inu.png; sourceTree = "<group>"; };
+		64788FEB230464FE0072DD64 /* eto_mark12_inoshishi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark12_inoshishi.png; sourceTree = "<group>"; };
+		64788FEC230464FE0072DD64 /* eto_mark05_tatsu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark05_tatsu.png; sourceTree = "<group>"; };
+		64788FED230464FE0072DD64 /* eto_mark09_saru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark09_saru.png; sourceTree = "<group>"; };
+		64788FEE230464FE0072DD64 /* eto_mark04_usagi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eto_mark04_usagi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +87,18 @@
 				646F0F9122FB259C006BA068 /* LaunchScreen.storyboard */,
 				646F0F9422FB259C006BA068 /* Info.plist */,
 				645F574222FC977D0034160B /* ResultViewController.swift */,
+				64788FE4230464FE0072DD64 /* eto_mark01_nezumi.png */,
+				64788FE6230464FE0072DD64 /* eto_mark02_ushi.png */,
+				64788FE3230464FD0072DD64 /* eto_mark03_tora.png */,
+				64788FEE230464FE0072DD64 /* eto_mark04_usagi.png */,
+				64788FEC230464FE0072DD64 /* eto_mark05_tatsu.png */,
+				64788FE7230464FE0072DD64 /* eto_mark06_hebi.png */,
+				64788FE9230464FE0072DD64 /* eto_mark07_uma.png */,
+				64788FE8230464FE0072DD64 /* eto_mark08_hitsuji.png */,
+				64788FED230464FE0072DD64 /* eto_mark09_saru.png */,
+				64788FE5230464FE0072DD64 /* eto_mark10_tori.png */,
+				64788FEA230464FE0072DD64 /* eto_mark11_inu.png */,
+				64788FEB230464FE0072DD64 /* eto_mark12_inoshishi.png */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -125,9 +161,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64788FF5230464FE0072DD64 /* eto_mark07_uma.png in Resources */,
+				64788FF7230464FE0072DD64 /* eto_mark12_inoshishi.png in Resources */,
+				64788FF8230464FE0072DD64 /* eto_mark05_tatsu.png in Resources */,
+				64788FEF230464FE0072DD64 /* eto_mark03_tora.png in Resources */,
+				64788FF2230464FE0072DD64 /* eto_mark02_ushi.png in Resources */,
+				64788FF9230464FE0072DD64 /* eto_mark09_saru.png in Resources */,
+				64788FF4230464FE0072DD64 /* eto_mark08_hitsuji.png in Resources */,
 				646F0F9322FB259C006BA068 /* LaunchScreen.storyboard in Resources */,
+				64788FF1230464FE0072DD64 /* eto_mark10_tori.png in Resources */,
+				64788FF0230464FE0072DD64 /* eto_mark01_nezumi.png in Resources */,
+				64788FFA230464FE0072DD64 /* eto_mark04_usagi.png in Resources */,
+				64788FF3230464FE0072DD64 /* eto_mark06_hebi.png in Resources */,
 				646F0F9022FB259C006BA068 /* Assets.xcassets in Resources */,
 				646F0F8E22FB259B006BA068 /* Main.storyboard in Resources */,
+				64788FF6230464FE0072DD64 /* eto_mark11_inu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SlideshowApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
