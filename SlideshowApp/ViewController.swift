@@ -56,6 +56,11 @@ class ViewController: UIViewController {
         ImageView.image = images[imageIndex]
     }
     
+    @IBOutlet weak var tapButton: UIButton!
+    @IBAction func tapButton(_ sender: Any) {
+        
+    }
+    
     //再生/停止ボタン
     
     var timer: Timer!
@@ -72,30 +77,39 @@ class ViewController: UIViewController {
     @IBAction func unwind(_ segue: UIStoryboardSegue){
         
     }
+    
      @IBOutlet weak var saiseiButton: UIButton!
     //self.timerがnilであればタイマーを作動させる
     @IBAction func startStop(_ sender: Any) {
         if self.timer == nil{
         self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(onTimer(_:)), userInfo: nil, repeats: true)
-            //再生ボタンを「再生」に
-            saiseiButton.setTitle("再生", for: .normal)
-        //nilでなければタイマーを停止する
+            
+            //再生ボタンを「停止」に
+            saiseiButton.setTitle("停止", for: .normal)
+           
+            //タイマーが作動中(nilでない)であればbackimageとnextimageは無効（false）
+            backImage.isEnabled = false
+            nextImage.isEnabled = false
+            tapButton.isEnabled = false
+            
+            //nilでなければタイマーを停止する
         } else {
             self.timer.invalidate()
             self.timer = nil
-            //再生ボタンを「停止」に
-            saiseiButton.setTitle("停止", for: .normal)
-        }
-        //タイマーが停止中(nil)であればbackimageとnextimageは有効(true)
-        if self.timer == nil{
+            
+            //再生ボタンを「再生」に
+            saiseiButton.setTitle("再生", for: .normal)
+            
+            //タイマーが停止中(nil)であればbackimageとnextimageは有効(true)
             backImage.isEnabled = true
             nextImage.isEnabled = true
-        //タイマーが作動中(nilでない)であればbackimageとnextimageは無効（false）
-        }else{
-            backImage.isEnabled = false
-            nextImage.isEnabled = false
+            tapButton.isEnabled = true
         }
         
+    }
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
 }

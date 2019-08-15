@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="FAt-Yv-ZfX">
-                                <rect key="frame" x="72" y="428" width="270" height="40"/>
+                                <rect key="frame" x="25" y="264" width="270" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtL-6A-TWI">
                                         <rect key="frame" x="0.0" y="0.0" width="70" height="40"/>
@@ -61,23 +61,39 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="atR-un-Pom">
-                                <rect key="frame" x="87" y="214" width="240" height="157"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-S0-ERk">
-                                <rect key="frame" x="126" y="202" width="162" height="169"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="Q7Y-ES-bo8" kind="show" id="gtO-ww-hNm"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-cQ-fT7">
+                                <rect key="frame" x="52.5" y="52" width="215" height="196"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="atR-un-Pom">
+                                        <rect key="frame" x="20" y="20" width="175" height="156"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="156" id="dbh-ld-6M0"/>
+                                            <constraint firstAttribute="width" constant="175" id="xdh-rQ-9Fz"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-S0-ERk">
+                                        <rect key="frame" x="20" y="20" width="175" height="156"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRS-S9-Shw"/>
+                                            <segue destination="Q7Y-ES-bo8" kind="show" id="gtO-ww-hNm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="G6k-6l-JNA"/>
+                                    <constraint firstAttribute="height" constant="196" id="KUP-qC-DhB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="FAt-Yv-ZfX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4nH-bN-OIp"/>
                             <constraint firstItem="FAt-Yv-ZfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pze-8V-PzQ"/>
+                            <constraint firstItem="nBB-cQ-fT7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vS1-GV-o5x"/>
+                            <constraint firstItem="FAt-Yv-ZfX" firstAttribute="top" secondItem="nBB-cQ-fT7" secondAttribute="bottom" constant="16" id="vWv-b6-2Mf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -86,6 +102,7 @@
                         <outlet property="backImage" destination="Mud-EE-EPq" id="2dT-hr-yFC"/>
                         <outlet property="nextImage" destination="YtL-6A-TWI" id="8XB-Vl-e2q"/>
                         <outlet property="saiseiButton" destination="cfE-QA-QkP" id="MSe-3h-tDI"/>
+                        <outlet property="tapButton" destination="Hxa-S0-ERk" id="OIJ-5e-d4M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,24 +114,37 @@
             <objects>
                 <viewController id="Q7Y-ES-bo8" customClass="ResultViewController" customModule="SlideshowApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LrN-pc-lhx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-5Q-2HK">
-                                <rect key="frame" x="20" y="120" width="374" height="430"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGm-JI-4d5">
-                                <rect key="frame" x="155" y="676" width="105" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGm-JI-4d5">
+                                <rect key="frame" x="83" y="279" width="81" height="38"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Xz0-uP-HTM"/>
+                                    <constraint firstAttribute="width" constant="105" id="m0Y-Hu-fo3"/>
+                                </constraints>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="Rmi-xo-gNM" kind="unwind" unwindAction="unwind:" id="wXw-mk-f4n"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-5Q-2HK">
+                                <rect key="frame" x="-21" y="94" width="289" height="173"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="273" id="1qN-FI-5BA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="EWr-BB-C4I"/>
+                                    <constraint firstAttribute="width" constant="374" id="N5o-gf-g7G"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FGm-JI-4d5" firstAttribute="centerX" secondItem="LrN-pc-lhx" secondAttribute="centerX" id="247-ia-IoF"/>
+                            <constraint firstItem="FGm-JI-4d5" firstAttribute="top" secondItem="5IB-5Q-2HK" secondAttribute="bottom" constant="20" id="5k7-Y7-BdI"/>
+                            <constraint firstItem="5IB-5Q-2HK" firstAttribute="centerX" secondItem="LrN-pc-lhx" secondAttribute="centerX" id="GXw-Gv-sHQ"/>
+                            <constraint firstItem="5IB-5Q-2HK" firstAttribute="centerY" secondItem="LrN-pc-lhx" secondAttribute="centerY" id="MFS-nc-2T6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BLQ-u0-DbA"/>
                     </view>
                     <connections>
