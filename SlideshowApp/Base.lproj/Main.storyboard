@@ -64,16 +64,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nBB-cQ-fT7">
                                 <rect key="frame" x="52.5" y="52" width="215" height="196"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="atR-un-Pom">
-                                        <rect key="frame" x="20" y="20" width="175" height="156"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="atR-un-Pom">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <gestureRecognizers/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="156" id="dbh-ld-6M0"/>
-                                            <constraint firstAttribute="width" constant="175" id="xdh-rQ-9Fz"/>
-                                        </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hxa-S0-ERk">
-                                        <rect key="frame" x="20" y="20" width="175" height="156"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="196"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hRS-S9-Shw"/>
@@ -107,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-57.971014492753625" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-58.125" y="137.32394366197184"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="d7W-ve-i08">
@@ -118,7 +115,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FGm-JI-4d5">
-                                <rect key="frame" x="83" y="279" width="81" height="38"/>
+                                <rect key="frame" x="107.5" y="440.5" width="105" height="60"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Xz0-uP-HTM"/>
@@ -130,7 +127,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eto_mark01_nezumi.png" translatesAutoresizingMaskIntoConstraints="NO" id="5IB-5Q-2HK">
-                                <rect key="frame" x="-21" y="94" width="289" height="173"/>
+                                <rect key="frame" x="-27" y="147.5" width="374" height="273"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="273" id="1qN-FI-5BA"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="EWr-BB-C4I"/>
